@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support · CatClean</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <main>
+    <p class="meta lang"><a href="../support.html">简体中文</a></p>
+    <h1>CatClean Support</h1>
+    <p class="meta">On-device photo and file cleanup · iOS</p>
+
+    <h2>Why is there no "Clean Everything" button?</h2>
+    <p>Because the suggestions include screenshots, screen recordings, and blurry photos — whole
+       categories, in the hundreds. One button that deletes all of them takes the decision away
+       from you. CatClean finds things and puts them in order; which ones to delete is your call,
+       made one category at a time.</p>
+
+    <h2>The results don't match what I remember having</h2>
+    <p>Scanning uses asset metadata plus pixel analysis, and a few categories only appear when the
+       files themselves carry a marker written by the system:</p>
+    <ul>
+      <li>Screenshots and screen recordings must be produced by the system's own capture. An image
+          imported from elsewhere is not put in this category, even if its filename says
+          "screenshot".</li>
+      <li>Bursts and Live Photos only show up if your library actually contains some.</li>
+    </ul>
+
+    <h2>Similar photos look wrong in the Simulator</h2>
+    <p>The Simulator has no Metal inference context, so Vision cannot build feature prints and the
+       app falls back to a grayscale signature. On a real device it uses Vision, which is more
+       accurate.</p>
+
+    <h2>Where did deleted photos go?</h2>
+    <p>Deletions from your library go through iOS's own Recently Deleted and can be recovered.
+       Deleted files go to CatClean's trash, where you can restore them from Files › Trash.</p>
+
+    <h2>Does video slimming lose quality?</h2>
+    <p>It re-encodes at the same resolution and lowers the bitrate, which is invisible in everyday
+       viewing. The original bitstream cannot be recovered from the compressed version, though,
+       which is why the app asks whether to delete the original or keep both.</p>
+
+    <h2>Why does it need photo access at all?</h2>
+    <p>Without it the app can't read any assets, so there is nothing to scan. Nothing is uploaded
+       and no network requests are made — see the <a href="privacy.html">privacy policy</a>.</p>
+
+    <h2>Still stuck</h2>
+    <p>Leave a note on the
+       <a href="https://github.com/showtestlog/catclean-site/issues">project issue tracker</a> with
+       your device model, iOS version, and the steps to reproduce. A review comment on the App
+       Store works too.</p>
+  </main>
+  <footer>© 2026 CatClean</footer>
+</body>
+</html>

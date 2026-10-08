@@ -61,6 +61,15 @@ h2 {
   font-size: 14px;
 }
 
+/* 语言开关压在这一页的第一行右上角。它只是导航，不该和标题抢位置。 */
+.meta.lang {
+  margin: 0 0 12px;
+  text-align: right;
+}
+
+.meta.lang a { text-decoration: none; }
+.meta.lang a:hover { text-decoration: underline; }
+
 .lead {
   margin: 0 0 8px;
   font-size: 19px;
