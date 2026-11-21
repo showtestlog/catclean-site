@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>隐私政策 · 英语发音拆解</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font: 16px/1.75 -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", sans-serif;
+         max-width: 720px; margin: 0 auto; padding: 48px 24px 96px; }
+  h1 { font-size: 30px; margin: 0 0 6px; }
+  .meta { color: #888; font-size: 13px; margin-bottom: 36px; }
+  h2 { font-size: 19px; margin: 36px 0 10px; }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  code { font-size: 14px; background: rgba(127,127,127,.15); padding: 1px 5px; border-radius: 4px; }
+  a { color: #6b5cff; }
+  hr { border: none; border-top: 1px solid rgba(127,127,127,.25); margin: 40px 0; }
+</style>
+</head>
+<body>
+<h1>隐私政策</h1>
+<div class="meta">英语发音拆解（macOS）· 更新于 2026-11-18</div>
+
+<p><strong>一句话：这个 App 没有账号、没有统计 SDK、不上传你的任何内容。所有学习记录都只存在你自己的电脑上。</strong></p>
+
+<h2>我们不收集什么</h2>
+<ul>
+  <li>不收集姓名、邮箱、电话、位置、设备标识符等任何个人信息</li>
+  <li>不集成任何第三方分析、广告或崩溃上报 SDK</li>
+  <li>不需要注册或登录</li>
+</ul>
+
+<h2>会联网的两种情况（都由你主动触发）</h2>
+<ul>
+  <li><strong>下载真人语音包</strong>：从本项目的对象存储地址下载约 20 MB 的音频压缩包。请求只包含文件地址，不包含任何个人信息。下载完成后，朗读完全离线。</li>
+  <li><strong>可选的云端语音（默认关闭）</strong>：如果你在设置里填入自己的 Fish Audio API Key 并开启，朗读时会把<strong>当前句子的文本</strong>、语速和音色参数发送到 <code>api.fish.audio</code> 合成音频。该服务由第三方提供，受其隐私政策约束。不填 Key 时不会发出任何请求。</li>
+</ul>
+
+<h2>本地存储</h2>
+<p>以下内容保存在本机（<code>~/Library/Application Support</code> 与 UserDefaults），不会上传：</p>
+<ul>
+  <li>界面偏好：主题色、字号、窗口位置与大小、口音、滚动间隔等</li>
+  <li>已下载的语音包音频</li>
+  <li>你选择的克隆参考音频路径（仅存安全作用域书签，音频本身不复制、不上传，除非你开启云端克隆）</li>
+</ul>
+
+<h2>剪贴板</h2>
+<p>只有在你点击「从剪贴板拆解」时，App 才读取剪贴板中的文本，用于生成练习卡片；不会保存或上传。</p>
+
+<h2>儿童</h2>
+<p>App 不面向儿童收集任何信息，也没有任何账号或社交功能。</p>
+
+<h2>你的控制权</h2>
+<ul>
+  <li>删除 App 即删除全部本地数据</li>
+  <li>删除语音包：访达前往 <code>~/Library/Application Support/SoundBreakdown/VoicePack</code></li>
+  <li>随时在设置里关闭云端语音</li>
+</ul>
+
+<h2>联系我们</h2>
+<p>任何隐私相关问题：<a href="mailto:945358944@qq.com">945358944@qq.com</a></p>
+</body>
+</html>
